@@ -1,0 +1,246 @@
+@import "mixins";
+@import "reset";
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+main {
+}
+nav ul {
+    padding-left: 0;
+
+    // display: -webkit-box;
+    display: flex;
+    list-style: none;
+}
+header {
+    li {
+        font-size: 0.9em;
+        padding: 0.5em;
+        flex-basis: 12%;
+        // padding: 0;
+    }
+
+    @include flex;
+
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+}
+.justify-center {
+    justify-content: center !important;
+}
+.justify-between {
+    justify-content: space-between !important;
+}
+.justify-around {
+    justify-content: space-around !important;
+}
+
+video {
+    width: 100%;
+}
+.carrousel {
+    margin: auto 1em;
+    // width: 90%;
+    position: relative;
+    
+    video {
+        height: 40em;
+    }
+
+    .description {
+        position: absolute;
+        right: 6em;
+        top: 5em;
+        width: 35%;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+.flex {
+    @include flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flew-wrap {
+    flex-wrap: wrap;
+}
+.m-auto {
+    margin: auto;
+}
+.list_products__blue_product {
+    overflow: hidden;
+    margin: 1em;
+
+    position: relative;
+
+    .content {
+        position: absolute;
+        bottom: 2.3em;
+        width: 100%;
+        font-size: 0.8em;
+   
+        h4 {
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+    }
+
+}
+img {
+    transition: all 0.2s;
+    width: 100%;
+    
+}
+.container_zoom {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.zoom {
+    &:hover {
+        transform: scale(1.06);
+    }
+}
+.list_products__blue {
+    // height: 10em;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+section.fond-image {
+    article {
+        color: white;
+        text-align: center;
+
+        position: relative;
+
+        background-size: cover;
+        background-position: top;
+        height: 50em;
+        &:nth-child(1) {
+            background-image: url('/assets/images/vd0035_explore_the-first-look_gbm_kv_1440x810.webp');
+        }
+        &:nth-child(2) {
+            background-image: url('/assets/images/Product-Marketing_Family-Hub_pc_1440x810.webp');
+        }
+
+        ul {
+            li {
+                &:nth-child(1) {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .content {
+            position: absolute;
+            top: 2em;
+            width: 100%;
+
+        }
+        .bottom_content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+
+            nav {
+                ul {
+                    justify-content: center;
+                    align-items: center;
+                    li {
+                        margin: 0.3em;
+                        &:nth-child(2) {
+                            background-color: white;
+                            padding: 1em;
+                            color: black;
+                            border-radius: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+section.dowhatyoucant {
+    font-weight: 600;
+    ol {
+        padding-left: 0;
+    }
+    li {
+        font-size: 1.6em;
+        margin: 2em;
+
+        span {
+            left: 2em;
+            position: relative;
+        }
+    }
+
+    ::marker {
+        font-size: 0.8em;
+    }
+}
+section.search {
+    .suggest_key_words {
+        li {
+            border: 1px solid silver;
+            padding: 0.5em;
+            font-size: 0.9em;
+            border-radius: 50px;
+            min-width: 15%;
+            margin: 0.3em;
+        }
+    }
+}
+.no-list {
+    list-style: none;
+}
+input[type=text] {
+    border-radius: 100px;
+    border: 1px solid rgb(74, 74, 74);
+    padding: 0.9em;
+    width: 100%;
+    font-size: 1em;
+    margin: 2em auto;
+    background-color: #f7f7f7;
+}
+form {
+    width: 35%;
+}
+
+
+//FLEX-BASIS
+@for $i from 1 through 20 {
+    .fb-#{$i * 5} {
+        flex-basis: $i * 5%;
+    }
+}
+//H1-6
+@for $i from 1 through 6 {
+    h#{7 - $i} {
+        font-size: $i * 0.5em;
+    }
+}
+//width
+@for $i from 1 through 20 {
+    .w-#{$i * 5} {
+        width: $i * 5%;
+    }
+}
+//Weight
+@for $i from 3 through 7 {
+    .weight-#{$i} {
+        font-weight: $i * 100;
+    }
+}
