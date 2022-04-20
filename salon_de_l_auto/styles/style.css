@@ -1,0 +1,913 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,500&display=swap");
+h6 {
+  font-size: 0.4em;
+  margin: 0;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 0.8em;
+  margin: 0;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.6em;
+  margin: 0;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin: 0;
+  font-weight: 600;
+}
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  background-color: #101010;
+  margin: 0;
+}
+
+header {
+  background-color: #101010;
+  color: white;
+  z-index: 150;
+}
+
+header:nth-child(1) div {
+  padding: 0.2em;
+  text-align: center;
+}
+
+header #logo {
+  width: 90%;
+  margin: 0.2em;
+}
+
+header i {
+  color: #25b0ac;
+}
+
+header nav {
+  background-color: #2b2b2b;
+  position: fixed;
+  width: 100%;
+  letter-spacing: 0.05em;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+header nav li {
+  padding: 0.5em;
+  color: #25b0ac;
+  font-size: 0.8em;
+}
+
+header nav li:hover {
+  background-color: #6a6a6a;
+  border-bottom: 3px solid #25b0ac;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav button {
+  height: 3em;
+  margin-bottom: -0.6em;
+  margin-top: -0.6em;
+}
+
+header nav i {
+  color: white;
+  font-size: 2em;
+}
+
+img {
+  width: 100%;
+}
+
+.row, .social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 750px) {
+  .fb-10 {
+    -ms-flex-preferred-size: 10%;
+        flex-basis: 10%;
+  }
+  .fb-20 {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .fb-30 {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  .fb-40 {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+  .fb-50 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .fb-60 {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
+  .fb-70 {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+  }
+  .fb-80 {
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
+  }
+  .fb-90 {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+  .fb-100 {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+.space-around {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+.space-between {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.space-end {
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: end !important;
+}
+
+.space-start, footer nav ul, .social ul {
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: start !important;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.second_color, .social {
+  color: #25b0ac;
+}
+
+.header {
+  background-image: url("https://salon-automobile-lyon.com/sites/default/files/2021-06/fond-accueil1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.header .row, .header .social ul, .social .header ul {
+  height: 100%;
+}
+
+.header p {
+  font-size: 1.2em;
+  letter-spacing: 0.07em;
+}
+
+.fixed, header {
+  position: fixed;
+  top: 0;
+}
+
+.btn-blue {
+  padding: 0.5em;
+  background: radial-gradient(90.79% 797.7% at 93.97% 11.05%, #287598 0%, #55ADAA 100%);
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.w-10 {
+  width: 10%;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.radius-1 {
+  border-radius: 2px;
+}
+
+.radius-2 {
+  border-radius: 4px;
+}
+
+.radius-3, .btn-blue, .btn-light {
+  border-radius: 6px;
+}
+
+.ml-1 {
+  margin-left: 1;
+}
+
+.ml-2 {
+  margin-left: 2;
+}
+
+.ml-3 {
+  margin-left: 3;
+}
+
+.ml-4 {
+  margin-left: 4;
+}
+
+.ml-5 {
+  margin-left: 5;
+}
+
+.ml-6 {
+  margin-left: 6;
+}
+
+.ml-7 {
+  margin-left: 7;
+}
+
+.ml-8 {
+  margin-left: 8;
+}
+
+.ml-9 {
+  margin-left: 9;
+}
+
+.ml-10 {
+  margin-left: 10;
+}
+
+.mr-1 {
+  margin-right: 1;
+}
+
+.mr-2 {
+  margin-right: 2;
+}
+
+.mr-3 {
+  margin-right: 3;
+}
+
+.mr-4 {
+  margin-right: 4;
+}
+
+.mr-5 {
+  margin-right: 5;
+}
+
+.mr-6 {
+  margin-right: 6;
+}
+
+.mr-7 {
+  margin-right: 7;
+}
+
+.mr-8 {
+  margin-right: 8;
+}
+
+.mr-9 {
+  margin-right: 9;
+}
+
+.mr-10 {
+  margin-right: 10;
+}
+
+.mt-1 {
+  margin-top: 1%;
+}
+
+.mt-2 {
+  margin-top: 2%;
+}
+
+.mt-3 {
+  margin-top: 3%;
+}
+
+.mt-4, section {
+  margin-top: 4%;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.mt-6, footer nav {
+  margin-top: 6%;
+}
+
+.mt-7 {
+  margin-top: 7%;
+}
+
+.mt-8 {
+  margin-top: 8%;
+}
+
+.mt-9 {
+  margin-top: 9%;
+}
+
+.mt-10 {
+  margin-top: 10%;
+}
+
+.mb-1 {
+  margin-bottom: 1;
+}
+
+.mb-2 {
+  margin-bottom: 2;
+}
+
+.mb-3 {
+  margin-bottom: 3;
+}
+
+.mb-4, section {
+  margin-bottom: 4;
+}
+
+.mb-5 {
+  margin-bottom: 5;
+}
+
+.mb-6 {
+  margin-bottom: 6;
+}
+
+.mb-7 {
+  margin-bottom: 7;
+}
+
+.mb-8 {
+  margin-bottom: 8;
+}
+
+.mb-9 {
+  margin-bottom: 9;
+}
+
+.mb-10 {
+  margin-bottom: 10;
+}
+
+.m-1 {
+  margin: 0.5%;
+}
+
+.m-2 {
+  margin: 1%;
+}
+
+.m-3 {
+  margin: 1.5%;
+}
+
+.m-4 {
+  margin: 2%;
+}
+
+.m-5 {
+  margin: 2.5%;
+}
+
+.m-6 {
+  margin: 3%;
+}
+
+.m-7 {
+  margin: 3.5%;
+}
+
+.m-8 {
+  margin: 4%;
+}
+
+.m-9 {
+  margin: 4.5%;
+}
+
+.m-10 {
+  margin: 5%;
+}
+
+.pl-1 {
+  padding-left: 0.5%;
+}
+
+.pl-2 {
+  padding-left: 1%;
+}
+
+.pl-3 {
+  padding-left: 1.5%;
+}
+
+.pl-4 {
+  padding-left: 2%;
+}
+
+.pl-5 {
+  padding-left: 2.5%;
+}
+
+.pl-6 {
+  padding-left: 3%;
+}
+
+.pl-7 {
+  padding-left: 3.5%;
+}
+
+.pl-8 {
+  padding-left: 4%;
+}
+
+.pl-9 {
+  padding-left: 4.5%;
+}
+
+.pl-10 {
+  padding-left: 5%;
+}
+
+.pr-1 {
+  padding-right: 0.5%;
+}
+
+.pr-2 {
+  padding-right: 1%;
+}
+
+.pr-3 {
+  padding-right: 1.5%;
+}
+
+.pr-4 {
+  padding-right: 2%;
+}
+
+.pr-5 {
+  padding-right: 2.5%;
+}
+
+.pr-6 {
+  padding-right: 3%;
+}
+
+.pr-7 {
+  padding-right: 3.5%;
+}
+
+.pr-8 {
+  padding-right: 4%;
+}
+
+.pr-9 {
+  padding-right: 4.5%;
+}
+
+.pr-10 {
+  padding-right: 5%;
+}
+
+.pt-1 {
+  padding-top: 0.5%;
+}
+
+.pt-2 {
+  padding-top: 1%;
+}
+
+.pt-3 {
+  padding-top: 1.5%;
+}
+
+.pt-4 {
+  padding-top: 2%;
+}
+
+.pt-5 {
+  padding-top: 2.5%;
+}
+
+.pt-6 {
+  padding-top: 3%;
+}
+
+.pt-7 {
+  padding-top: 3.5%;
+}
+
+.pt-8 {
+  padding-top: 4%;
+}
+
+.pt-9 {
+  padding-top: 4.5%;
+}
+
+.pt-10 {
+  padding-top: 5%;
+}
+
+.pb-1 {
+  padding-bottom: 0.5%;
+}
+
+.pb-2 {
+  padding-bottom: 1%;
+}
+
+.pb-3 {
+  padding-bottom: 1.5%;
+}
+
+.pb-4 {
+  padding-bottom: 2%;
+}
+
+.pb-5 {
+  padding-bottom: 2.5%;
+}
+
+.pb-6 {
+  padding-bottom: 3%;
+}
+
+.pb-7 {
+  padding-bottom: 3.5%;
+}
+
+.pb-8 {
+  padding-bottom: 4%;
+}
+
+.pb-9 {
+  padding-bottom: 4.5%;
+}
+
+.pb-10 {
+  padding-bottom: 5%;
+}
+
+.p-1 {
+  padding: 0.5%;
+}
+
+.p-2 {
+  padding: 1%;
+}
+
+.p-3 {
+  padding: 1.5%;
+}
+
+.p-4 {
+  padding: 2%;
+}
+
+.p-5 {
+  padding: 2.5%;
+}
+
+.p-6 {
+  padding: 3%;
+}
+
+.p-7 {
+  padding: 3.5%;
+}
+
+.p-8 {
+  padding: 4%;
+}
+
+.p-9 {
+  padding: 4.5%;
+}
+
+.p-10 {
+  padding: 5%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.card {
+  margin: 1em;
+  background-color: #2b2b2b;
+  color: white;
+  min-height: 20em;
+  font-size: 0.9em;
+  min-height: 24em;
+  position: relative;
+}
+
+.card h3 {
+  font-weight: 500;
+}
+
+.card .btn-light {
+  font-size: 1em !important;
+  position: absolute;
+  bottom: 1em;
+  width: 50%;
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+section:nth-child(2n) {
+  background-color: #101010;
+}
+
+section:nth-child(2n+1) {
+  background-color: #2b2b2b;
+  color: white;
+}
+
+section:nth-child(5) {
+  background-image: url("https://salon-automobile-lyon.com//sites/default/files/2019-02/Rectangle.png");
+  background-position: center;
+  background-size: cover;
+  height: 30em;
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+}
+
+section:nth-child(5) h2 {
+  font-weight: 400;
+  font-size: 4em;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.direction-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bg_main {
+  background-color: #2b2b2b;
+}
+
+.light {
+  font-weight: lighter;
+  color: rgba(85, 173, 170, 0.325) !important;
+}
+
+.last_article {
+  color: white;
+}
+
+.last_article img {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  width: 30em;
+  height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.last_article .grand-miniature {
+  height: 30em !important;
+}
+
+.last_article button {
+  background-color: transparent;
+  border: 1px solid #25b0ac;
+  color: white;
+}
+
+.chiffres {
+  color: white;
+}
+
+.chiffres h3 {
+  font-size: 2.7em;
+  font-weight: 400;
+}
+
+.btn-light {
+  padding: 0.5em;
+  color: white;
+  background-color: transparent;
+  border: 1px solid #25b0ac;
+  font-size: 1.3em;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-light:hover {
+  background-color: #25b0ac;
+  color: black;
+}
+
+.posts p {
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+
+.posts div {
+  border-bottom: 1px solid #25b0ac;
+  padding-bottom: 2em;
+}
+
+a {
+  color: #25b0ac;
+}
+
+.partenaires {
+  width: 45%;
+}
+
+.partenaires div {
+  margin: 1em;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+footer {
+  padding: 3em;
+}
+
+footer p {
+  margin: 0.3em;
+}
+
+footer .petit {
+  font-size: 0.95em;
+}
+
+footer .logo {
+  width: 40%;
+}
+
+footer i {
+  margin-right: 1em;
+}
+
+footer nav {
+  width: 100%;
+  border-top: 1px solid #161616;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 100%;
+}
+
+footer nav ul li {
+  margin: 0 0.2em;
+  font-size: 0.8em;
+}
+
+footer nav ul li::after {
+  content: ' | ';
+}
+
+footer .contact {
+  padding: 0;
+}
+
+.align-top, .social ul {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.social {
+  font-size: 1.7em;
+}
+
+.social ul {
+  padding: 0;
+  margin: 0;
+}
+
+.social ul li {
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+#logo_gl_events {
+  width: 17%;
+}
+
+#up_page {
+  float: right;
+  font-size: 2.1em;
+}
+/*# sourceMappingURL=style.css.map */

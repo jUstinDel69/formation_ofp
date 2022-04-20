@@ -1,0 +1,450 @@
+@import './variables';
+@import './reset';
+
+
+body {
+    background-color: $bg_color;
+    margin: 0;
+}
+header {
+    background-color: $bg_color;
+    color: white;
+
+    // letter-spacing: 0.3em;
+    z-index: 150;
+
+    &:nth-child(1) {
+        div {
+            padding: 0.2em;
+            text-align: center;
+        }
+    }
+    #logo {
+        width: 90%;
+        margin: 0.2em
+    }
+    i {
+        color: $second_color;
+    }
+
+    @extend .fixed;
+
+    nav {
+        background-color: #2b2b2b;
+        position: fixed;
+        width: 100%;
+        letter-spacing: 0.05em;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    
+        li {
+            padding: 0.5em;
+            color: $second_color;
+            font-size: 0.8em;
+
+            &:hover {
+                background-color: #6a6a6a;
+                border-bottom: 3px solid $second_color;
+                box-sizing: border-box;
+            }
+        }
+        button {
+            height: 3em;
+            margin-bottom: -0.6em;
+            margin-top: -0.6em;
+        }
+        i {
+            color: white;
+            font-size: 2em;
+        }
+    }
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+
+@media (min-width: 750px) {
+    @for $i from 1 through 10 {
+        $flexbasis: 10% * $i;
+        .fb-#{$i * 10} { 
+            flex-basis: $flexbasis;
+        }
+    }
+}
+.space-around {
+    justify-content: space-around !important;
+}
+.space-between {
+    justify-content: space-between !important;
+}
+.space-end {
+    justify-content: end !important;
+}
+.space-start {
+    justify-content: start !important;
+}
+
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+
+.second_color {
+    color: $second_color;
+}
+
+.header {
+    background-image: url('https://salon-automobile-lyon.com/sites/default/files/2021-06/fond-accueil1.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    
+    .row {
+        height: 100%;
+    }
+    p {
+        font-size: 1.2em;
+        letter-spacing: 0.07em;
+    }
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.btn-blue {
+    padding: 0.5em;
+    background: radial-gradient(90.79% 797.7% at 93.97% 11.05%, #287598 0%, #55ADAA 100%);
+    border: none;
+    font-size: 1.3em;
+    @extend .radius-3;
+    cursor: pointer;
+}
+
+//Width
+@for $i from 1 through 10 {
+    $width: 10% * $i;
+    .w-#{$i * 10} { 
+        width: $width;
+    }
+}
+
+//Border radius
+@for $i from 1 through 3 {
+    $width: 2px * $i;
+    .radius-#{$i} { 
+        border-radius: $width;
+    }
+}
+
+
+
+//Margin-left
+@for $i from 1 through 10 {
+    $ml: $i;
+    .ml-#{$i} { 
+        margin-left: $ml;
+    }
+}
+//Margin-right
+@for $i from 1 through 10 {
+    $ml: $i;
+    .mr-#{$i} { 
+        margin-right: $ml;
+    }
+}
+//Margin-top
+@for $i from 1 through 10 {
+    $ml: $i * 1%;
+    .mt-#{$i} { 
+        margin-top: $ml;
+    }
+}
+//Margin-bottom
+@for $i from 1 through 10 {
+    $ml: $i;
+    .mb-#{$i} { 
+        margin-bottom: $ml;
+    }
+}
+//margin
+@for $i from 1 through 10 {
+    $m: 0.5% * $i;
+    .m-#{$i} { 
+        margin: $m;
+    }
+}
+
+
+
+//padding-left
+@for $i from 1 through 10 {
+    $p: 0.5% * $i;
+    .pl-#{$i} { 
+        padding-left: $p;
+    }
+}
+//padding-right
+@for $i from 1 through 10 {
+    $p: 0.5% * $i;
+    .pr-#{$i} { 
+        padding-right: $p;
+    }
+}
+//padding-top
+@for $i from 1 through 10 {
+    $p: 0.5% * $i;
+    .pt-#{$i} { 
+        padding-top: $p;
+    }
+}
+//padding-bottom
+@for $i from 1 through 10 {
+    $p: 0.5% * $i;
+    .pb-#{$i} { 
+        padding-bottom: $p;
+    }
+}
+//padding
+@for $i from 1 through 10 {
+    $p: 0.5% * $i;
+    .p-#{$i} { 
+        padding: $p;
+    }
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    // text-align: center;
+}
+.m-auto {
+    margin: auto;
+}
+
+.card {
+    margin: 1em;
+    background-color: $third_color;
+    color: white;
+    min-height: 20em;
+    font-size: 0.9em;
+    min-height: 24em;
+
+    position: relative;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    .btn-light {
+        font-size: 1em !important;
+        position: absolute;
+        bottom: 1em;
+        width: 50%;
+        margin-left: 20%;
+        cursor: pointer;
+    }
+}
+section {
+    @extend .mt-4;
+    @extend .mb-4;
+}
+section:nth-child(2n) {
+    background-color: $bg_color;
+}
+section:nth-child(2n+1) {
+    background-color: $third_color;
+    color: white;
+}
+section:nth-child(5) {
+    background-image: url('https://salon-automobile-lyon.com//sites/default/files/2019-02/Rectangle.png');
+    background-position: center;
+    background-size: cover;
+    height: 30em;
+    text-align: center;
+
+    font-size: 0.8em;
+    h2 {
+        font-weight: 400;
+        font-size: 4em;
+    }
+
+    color: white;
+}
+.h-100 {
+    height: 100%;
+}
+.h-20 {
+    height: 20%;
+}
+
+
+.direction-col {
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bg_main {
+    background-color: $third_color;
+}
+
+.light {
+    font-weight: lighter;
+    color: rgba(85, 173, 170, 0.325) !important;
+}
+
+.last_article {
+    color: white;
+    img {
+        transform: scale(1.07);
+        width: 30em;
+        height: 15em;
+        object-fit: cover;
+    }
+    .grand-miniature {
+        height: 30em !important;
+    }
+
+    button {
+        background-color: transparent;
+        border: 1px solid $second_color;
+        color: white;
+    }
+}
+
+.chiffres {
+    color: white;
+    
+    h3 {
+        font-size: 2.7em;
+        font-weight: 400;
+    }
+}
+
+.btn-light {
+    padding: 0.5em;
+    color: white;
+    background-color: transparent;
+    border: 1px solid $second_color;
+    font-size: 1.3em;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    @extend .radius-3;
+
+    &:hover {
+        background-color: $second_color;
+        color: black;
+    }
+}
+.posts {
+    p {
+        font-size: 1.1em;
+        line-height: 1.1em;
+    }
+    div {
+        border-bottom: 1px solid $second_color;
+        padding-bottom: 2em;
+    }
+}
+a {
+    color: $second_color;
+}
+.partenaires {
+    width: 45%;
+    div {
+        margin: 1em;
+        flex-basis: 20%;
+    }
+}
+.italic  {
+    font-style: italic;
+}
+footer {
+    p {
+        margin: 0.3em;
+    }
+    .petit {
+        font-size: 0.95em;
+    }
+    padding: 3em;
+
+    .logo {
+        width: 40%;
+    }
+    i {
+        margin-right: 1em;
+    }
+    nav {
+        width: 100%;
+        border-top: 1px solid rgb(22, 22, 22);
+
+        @extend .mt-6;
+
+        ul {
+            display: flex;
+            
+            @extend .space-start;
+            
+            padding: 0;
+        
+            
+            width: 100%;
+
+            li {
+                margin: 0 0.2em;
+                font-size: 0.8em;
+                &::after {
+                    content: ' | ';
+                }
+            }
+        }
+    }
+    .contact {
+        padding: 0;
+    }
+}
+.align-top {
+    align-items: start;
+}
+
+.social {
+    font-size: 1.7em;
+    
+    ul {
+        @extend .row;
+        padding: 0;
+        @extend .space-start;
+        @extend .align-top;
+        margin: 0;
+
+        li {
+            margin-right: 1em;
+            margin-top: 1em;
+        }
+    }
+    @extend .second_color;
+}
+
+#logo_gl_events {
+    width: 17%;
+}
+
+#up_page {
+    float: right;
+    font-size: 2.1em;
+}
